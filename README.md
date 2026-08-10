@@ -1,95 +1,111 @@
 # Formula 1 Race Analytics Dashboard
-## Overview
 
-This project is an interactive Power BI dashboard developed to analyse the 2024 Formula One British Grand Prix. The dashboard transforms raw race telemetry and event data into interactive visualisations, providing insights into driver performance, team comparisons, race strategy, pit stop performance and weather conditions throughout the race.
+> A five-page Power BI report analysing performance, strategy and race conditions at the 2024 Formula One British Grand Prix.
 
-The report was designed to demonstrate practical Business Intelligence skills including data modelling, DAX calculations, Power Query transformations and dashboard design.
+![Formula 1 executive dashboard](./screenshots/Executive%20Dashboard.png)
 
-## Dashboard Pages
-### Executive Dashboard
-#### Provides a high-level overview of the race including:
-- Driver standings
-- Team overview
-- Key performance indicators
-- Fastest lap
-- Average lap time
-- Pit stop summary
-- Executive insights
-- Driver Analysis
+## Project purpose
 
-#### Compare driver performance through:
+This individual Business Intelligence project turns historical race, telemetry, pit-stop and weather records into an interactive decision-support report. It was built to demonstrate how raw event data can be cleaned, modelled and translated into clear performance comparisons for different audiences.
 
-- Average lap time
-- Fastest lap
-- Driver rankings
-- Sector performance
-- Position comparison
-- Team Analysis
+The report answers questions such as:
 
-#### Analyse team performance including:
+- Which drivers and teams were quickest and most consistent?
+- How did lap time and position develop during the race?
+- When were pit stops made, and how long did they take?
+- How did teammates and constructors compare?
+- How did track and weather conditions change across the event?
 
-- Team average lap time
-- Fastest team laps
-- Pit stop totals
-- Driver comparison by team
-- Race Strategy
+## Report pages
 
-#### Explore strategic decisions through:
+| Page | Analytical purpose |
+| --- | --- |
+| Executive Dashboard | Summarises standings, fastest lap, average lap time, pit activity and headline race insights |
+| Driver Analysis | Compares driver pace, ranking, sector performance and position |
+| Team Analysis | Aggregates driver performance into constructor-level comparisons |
+| Race Strategy | Explores pit-stop timing, duration and lap-by-lap race progression |
+| Weather Analysis | Tracks air temperature, track temperature, humidity, wind and rainfall by lap |
 
-- Pit stop timing
-- Pit stop duration
-- Position changes
-- Lap-by-lap race progression
-- Weather Analysis
+## Business Intelligence workflow
 
-#### Visualise changing weather conditions including:
+```text
+Race and telemetry records
+        ↓
+Power Query cleaning and transformation
+        ↓
+Relationships and analytical data model
+        ↓
+DAX measures and calculated metrics
+        ↓
+Interactive report pages, slicers and KPI cards
+        ↓
+Performance and strategy insights
+```
 
-- Air temperature
-- Track temperature
-- Humidity
-- Wind speed
-- Rainfall by lap
+The project separates preparation, modelling, calculation and presentation. This matters because a useful dashboard should not only look polished; its measures should be traceable to structured records and should respond consistently to report filters.
 
-#### Technologies Used
-- Power BI Desktop
-- Power Query
-- DAX
-- Data Modelling
-- Interactive Slicers
-- KPI Cards
-- Data Visualisation
-- Skills Demonstrated
-- Data Cleaning
-- Data Transformation
-- Data Modelling
-- Dashboard Design
-- Business Intelligence
-- Interactive Reporting
-- DAX Measures
-- Performance Analysis
+## Measures and analysis represented
 
-### Dashboard Preview
-#### Executive Dashboard
-<img width="1440" height="805" alt="Executive Dashboard" src="https://github.com/user-attachments/assets/88a14f92-0840-4625-b8a2-d69fac82d2d6" />
+- Driver and team standings
+- Average and fastest lap time
+- Sector-level performance
+- Position and lap progression
+- Pit-stop count, timing and duration
+- Driver-to-driver and team-to-team comparison
+- Air and track temperature
+- Humidity, wind speed and rainfall
 
+## Dashboard gallery
 
-#### Driver Analysis
-<img width="716" height="401" alt="Driver Analysis" src="https://github.com/user-attachments/assets/e43566ad-c6b2-4529-9b44-c26c88128900" />
+### Driver analysis
 
-#### Team Analysis
-<img width="719" height="401" alt="Team Analysis" src="https://github.com/user-attachments/assets/246b969e-2fb3-4f69-8135-c8faf742021b" />
+![Driver analysis](./screenshots/Driver%20Analysis.png)
 
+### Team analysis
 
-#### Race Strategy
-<img width="718" height="402" alt="Race Strategy" src="https://github.com/user-attachments/assets/da7d4302-6741-4281-ba7c-774fbd07e178" />
+![Team analysis](./screenshots/Team%20Analysis.png)
 
+### Race strategy
 
-#### Weather Analysis
-<img width="718" height="402" alt="Weather Analysis" src="https://github.com/user-attachments/assets/420ccd79-6d18-4522-b9f5-2830ad0945bc" />
+![Race strategy](./screenshots/Race%20Strategy.png)
 
+### Weather analysis
 
-#### Dataset
-Data used within this project represents telemetry and race information from the 2024 Formula One British Grand Prix.
+![Weather analysis](./screenshots/Weather%20Analysis.png)
 
-### Author
+## Explore the report
+
+1. Download [`F1Dashboard.pbix`](./F1Dashboard.pbix).
+2. Open it with Power BI Desktop.
+3. Use the page navigation and slicers to change the analytical context.
+4. Cross-filter visuals to compare drivers, teams, laps and race conditions.
+
+## Repository contents
+
+```text
+F1Dashboard.pbix    Complete Power BI report
+screenshots/        Exported previews of the five report pages
+README.md           Project explanation and usage guide
+```
+
+## Skills demonstrated
+
+- Power BI report development
+- Power Query data cleaning and transformation
+- Analytical data modelling and relationships
+- DAX measures and filter context
+- KPI selection and information hierarchy
+- Interactive filtering and visual storytelling
+- Translating detailed event data into executive and operational views
+
+## Current boundaries
+
+- The analysis covers one historical event: the 2024 British Grand Prix.
+- The repository publishes the PBIX report and exported previews, not a separate raw-data package.
+- The report is descriptive rather than predictive and does not use a live refresh pipeline.
+- Full interaction requires Power BI Desktop because no public Power BI embed is included.
+
+## Author
+
 Muhammad Hamad
+
